@@ -10,11 +10,11 @@ public class ViewCategoriesUseCases : IViewCategoriesUseCases
 
     public ViewCategoriesUseCases (ICategoryRepository categoryRepository)
     {
-        this._categoryRepository = categoryRepository;
+        _categoryRepository = categoryRepository;
     }
     
     public IEnumerable<Category> Execute()
     {
         return _categoryRepository.GetCategories();
     }
-}
+} 
